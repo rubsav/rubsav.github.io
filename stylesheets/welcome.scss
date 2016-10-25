@@ -36,7 +36,13 @@
 	p {
 		margin: 0 0 .75em 0;
 	}
+}
+
 	.about {
 		padding: 0 7.5% 0 0;
 	}
-}
+	.about,.apps,.videos {
+		a {
+		text-decoration: none;
+		}
+	}
