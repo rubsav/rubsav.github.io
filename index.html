@@ -1,55 +1,246 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Ruben Avila Aguilar - Web Development & Video Production</title>
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet type='text/css'>
-		<link rel="stylesheet" href="stylesheets/application.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	</head>
-	<body>
-		<header id="main_navigation" class="clearfix">
-			<a href="#" class="name">Ruben Avila Aguilar</a>
-			<nav>
-				<a href="#">Videos</a>
-				<a href="#">Projects</a>
-				<a href="#">Contact</a>
-			</nav>
- 		</header>
-		<div class="wrapper wrapper_padding clearfix">
-			<div class="col-1 about homepage_content">
-				<h2>About</h2>
-				<hr>
-				<p>I am a Web developer and Designer living in Toronto.</p>
-				<p></p>
-			</div>
-			<div class="col-2 videos homepage_content">
-				<h2>Films</h2>
-				<hr>
-				<a href="http://ctfaa.ca/2014-konn/"><p>Konn - Assistant Director</p></a>
-				<a href="http://www.imdb.com/title/tt2748544/"><p>A Gun & A Ring - Best Boy (1st Assistant Lighting & Grip)</p></a>
-				<a href="https://plus.google.com/photos/106533762612105368865/albums/6026794448977665345"><p>The Life of Daniel Video Short - Producer</p></a>
-			</div>
-			<div class="col-3 apps homepage_content">
-				<h2>Websites Built</h2>
-				<hr>
-				<a href="https://adae.herokuapp.com/"><p>Adae</p></a>
-				<a href="https://imagemoji.herokuapp.com/"> <p>Imagemoji</p></a>
-				<a href="https://mixed-results.herokuapp.com/"><p>Mixed Results</p></a>
-			</div>
-		</div>
-		
-		<footer id="main_footer">
-			<p class="copyright">&copy;2016 Ruben Avila Aguilar</p>
-			<nav>
-				<a href="https://github.com/rubsav"><i class="fa fa-github"></i></a>
-				<a href="https://ca.linkedin.com/in/rubenavilaaguilar"><i class="fa fa-linkedin"></i></a>
-				<a href="#"></a>
-			</nav>
-		</footer>
-	</body>
-</html
+<html lang="en">
 
-   
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    
+    <title>Ruben Avila Aguilar - Web Development & Video Production</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="font-mfizz/font-mfizz.css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/application.css">
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var scollH = 0;
+            var aH = $('#skillshow').position().top;
+            $(document).on('scroll', function() {
+                scrollH = $(document).scrollTop();
+                if (scrollH > aH){
+                     $('#hiddenskills').fadeIn();
+                } else {
+                    $('#hiddenskills').fadeOut();
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-rocket"></i> <span class="light"></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" onclick='$("#hiddenskills").show()' href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#resume">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Ruben Avila Aguilar</h1>
+                        <p class="intro-text">I am a Toronto based Full-stack Web Developer with a passion for Film and Video Production.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About </h2>
+                <p>Talking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening. Improve up musical welcome he. Gay attended vicinity prepared now diverted. Esteems it ye sending reached as. Longer lively her design settle tastes advice mrs off who.</p>
+            </div>
+            <div id="skillshow"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content-section text-center">
+        <div class="skill-section">
+            <div class="container">
+                <h2>Skills & Abilities</h2>
+                <div class="col-sm-offset-2" id="hiddenskills">
+                    <div class="item html">
+                        <h2><i class="fa fa-html5"></i></h2>
+                        <svg width="160" height="160">
+                         <g>
+                          <title>HTML5</title>
+                          <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="10" stroke="#01cece" fill="none"/>
+                         </g>
+                        </svg>
+                    </div>
+
+                    <div class="item css">
+                        <h2><i class="fa fa-css3"></i></h2>
+                        <svg width="160" height="160">
+                         <g>
+                          <title>CSS3</title>
+                          <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="10" stroke="#01cece" fill="none"/>
+                         </g>
+                        </svg>
+                    </div>
+
+                    <div class="item ruby">
+                        <h2><i class="fa icon-ruby"></i></h2>
+                        <svg width="160" height="160">
+                         <g>
+                          <title>Ruby</title>
+                          <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="10" stroke="#01cece" fill="none"/>
+                         </g>
+                        </svg>
+                    </div>
+
+                    <div class="item rails">
+                        <h2><i class="fa icon-ruby-on-rails-alt"></i></h2>
+                        <svg width="160" height="160">
+                         <g>
+                          <title>Rails</title>
+                          <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="10" stroke="#01cece" fill="none"/>
+                         </g>
+                        </svg>
+                    </div>
+
+                    <div class="item js">
+                        <h2><i class="fa icon-javascript"></i></h2>
+                        <svg width="160" height="160">
+                         <g>
+                          <title>JS</title>
+                          <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="10" stroke="#01cece" fill="none"/>
+                         </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Web based projects</h2>
+                <hr>
+                <a href="https://adae.herokuapp.com/"><p>Adae - Cofounder/Developer</p></a>
+                <a href="https://imagemoji.herokuapp.com/"><p>Imagemoji - Fullstack Developer</p></a>
+                <a href="https://mixed-results.herokuapp.com/"><p>Mixed Results - Junior Front End Developer</p></a>
+                <a href="https://caretoshare.herokuapp.com/"><p>CareShare - Bitmaker Labs Final Project</p></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Resume</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Ruben</h2>
+                <p>Feel free to email me for your website & video dreams, or to just say hello!</p>
+                <p><a href="mailto:ruavilaa@gmail.com">ruavilaa@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                      <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+                        <i class="fa fa-instagram w3-hover-text-purple"></i>
+                        <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+                        <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+                        <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+                        <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; Ruben Avila Aguilar 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
