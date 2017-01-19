@@ -27,14 +27,18 @@ form{
   display: inline-block;
   position: relative;
 }
-.apps,.videos {
-	a {
-	text-decoration: none;
-	}
-	p {
-		&:hover { color: $highlight;
+.other {
+	color: white;
+		&:hover { color: #fd2080;
 		}
-	}
+}
+.konn {
+  width: 160px;
+  height: 220px;
+}
+.trailer {
+  width: 240px;
+  height: 330px;
 }
 
 .item {
@@ -66,6 +70,10 @@ form{
 
 .download {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.goodbye {
+  margin-top: 100px;
 }
 
 svg {

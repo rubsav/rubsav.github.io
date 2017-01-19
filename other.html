@@ -8,8 +8,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ruben Avila Aguilar - Web Development & Video Production</title>
-
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,21 +20,6 @@
     <link href="css/grayscale.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            var scollH = 0;
-            var aH = $('#skillshow').position().top;
-            $(document).on('scroll', function() {
-                scrollH = $(document).scrollTop();
-                if (scrollH > aH){
-                     $('#hiddenskills').fadeIn();
-                } else {
-                    $('#hiddenskills').fadeOut();
-                }
-            });
-        });
-    </script>
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -48,32 +31,12 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand page-scroll" href="index.html#page-top">
                     <i class="fa fa-rocket"></i> <span class="light"></span>
                 </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
                     <li>
-                        <a class="page-scroll" href="index.html#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" onclick='$("#hiddenskills").show()' href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#resume">Resume</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="index.html#portfolio">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -85,9 +48,13 @@
     <section id="portfolio" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Adae</h2>
+                <a href="https://mixed-results.herokuapp.com/"><p>Mixed Results - Junior Front End Developer</p></a>
                 <hr>
-                <a href="https://adae.herokuapp.com/"><p>Adae - Cofounder/Developer</p></a>
+                <a href="https://caretoshare.herokuapp.com/"><p>CareShare - Bitmaker Labs Final Project</p></a>
+                <hr>
+                <a href="http://www.imdb.com/title/tt2748544/"><p>A Gun & A Ring - Best Boy (1st Assistant Lighting & Grip)</p></a>
+                <hr>
+                <a href="https://plus.google.com/photos/106533762612105368865/albums/6026794448977665345"><p>The Life of Daniel Video Short - Producer</p></a>
             </div>
         </div>
     </section>
