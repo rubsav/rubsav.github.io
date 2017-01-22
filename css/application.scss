@@ -87,28 +87,28 @@ svg {
 }
 
 .html .circle_animation {
-  -webkit-animation: html 1s ease-out forwards;
-  animation: html 1s ease-out forwards;
+  -webkit-animation: html 2s ease-out forwards;
+  animation: html 2s ease-out forwards;
 }
 
 .css .circle_animation {
-  -webkit-animation: css 1s ease-out forwards;
-  animation: css 1s ease-out forwards;
+  -webkit-animation: css 2s ease-out forwards;
+  animation: css 2s ease-out forwards;
 }
 
 .ruby .circle_animation {
-  -webkit-animation: ruby 1s ease-out forwards;
-  animation: ruby 1s ease-out forwards;
+  -webkit-animation: ruby 2s ease-out forwards;
+  animation: ruby 2s ease-out forwards;
 }
 
 .rails .circle_animation {
-  -webkit-animation: rails 1s ease-out forwards;
-  animation: rails 1s ease-out forwards;
+  -webkit-animation: rails 2s ease-out forwards;
+  animation: rails 2s ease-out forwards;
 }
 
 .js .circle_animation {
-  -webkit-animation: js 1s ease-out forwards;
-  animation: js 1s ease-out forwards;
+  -webkit-animation: js 2s ease-out forwards;
+  animation: js 2s ease-out forwards;
 }
 
 @-webkit-keyframes html {
@@ -125,18 +125,18 @@ svg {
 
 @-webkit-keyframes ruby {
   to {
-    stroke-dashoffset: 30;
+    stroke-dashoffset: 60;
   }
 }
 
 @keyframes rails {
   to {
-    stroke-dashoffset: 30;
+    stroke-dashoffset: 40;
   }
 }
 
 @-webkit-keyframes js {
   to {
-    stroke-dashoffset: 50;
+    stroke-dashoffset: 60;
   }
 }
